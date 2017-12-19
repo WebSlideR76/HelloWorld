@@ -5,59 +5,67 @@
 * Créer un Jenkinsfile qui va automatiser la création du container
 * Publier l'application
 
+## Auteur(s)
+* **WebSlideR** - *version initiale* - [HelloWorld](https://github.com/WebSlideR76/HelloWorld)
+
+## ToDo List
+
+| Importance | Description |
+| ------ | ------ |
+| Haute | Continuer ! |
+| Haute | Et s'amuser :-) |
+
 ## Commandes
 
 Listes des commandes saisies.
 
 ### Récupération des sources depuis le serveur github
-```
-git clone https://github.com/WebSlideR76/HelloWorld.git
+```sh
+$ git clone https://github.com/WebSlideR76/HelloWorld.git
 ```
 
 ### Changement de dossier
-```
-cd HelloWorld
+```sh
+$ cd HelloWorld
 ```
 
 ### Compilation et packaging de l'application en JAR
-```
-mvn package
+```sh
+$ mvn package
 ```
 
 ### Création du container helloworld-guillaume en lisant le Dockerfile
-```
-docker build -t helloworld-guillaume .
+```sh
+$ docker build -t helloworld-guillaume .
 ```
 
 ### Exécution du container
-```
-docker run helloworld-guillaume:latest
+```sh
+$ docker run helloworld-guillaume:latest
 ```
 
 ### Liste des fichiers modifiés (en rouge)
-```
-git status
+```sh
+$ git status
 ```
 
 ### Ajout des fichiers modifiés au staged
-```
-git add .
+```sh
+$ git add .
 ```
 
-### Liste des fichiers modifiés prêt à être commité (en vert)
-```
-git status
+### Liste des fichiers modifiés prêts à être commité (en vert)
+```sh
+$ git status
 ```
 
 ### Commit des fichiers sur le repository local
-```
-git commit -m "MAJ des fichiers Dockerfile et pom.xml"
+```sh
+$ git commit -m "MAJ des fichiers Dockerfile et pom.xml"
 ```
 
 ### Envoi des fichiers sur le serveur
-```
-git push
+```sh
+$ git push
 ```
 
-## Auteur(s)
-* **WebSlideR** - *version initiale* - [HelloWorld](https://github.com/WebSlideR76/HelloWorld)
