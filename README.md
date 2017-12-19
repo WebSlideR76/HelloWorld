@@ -8,33 +8,51 @@
 ## Commandes
 
 ### Récupération des sources depuis le serveur github
-
-'''
+```
 git clone https://github.com/WebSlideR76/HelloWorld.git
-'''
+```
 
-## cd HelloWorld
+### Changement de dossier
+```
+cd HelloWorld
+```
 
-## mvn package
-Compilation et packaging de l'application en JAR
+### Compilation et packaging de l'application en JAR
+```
+mvn package
+```
 
-## docker build -t helloworld-guillaume .
-Création du container helloworld-guillaume en lisant le Dockerfile
+### Création du container helloworld-guillaume en lisant le Dockerfile
+```
+docker build -t helloworld-guillaume .
+```
 
-## docker run helloworld-guillaume:latest
-Exécution du container
+### Exécution du container
+```
+docker run helloworld-guillaume:latest
+```
 
-## git status
-Liste des fichiers modifiés (en rouge)
+### Liste des fichiers modifiés (en rouge)
+```
+git status
+```
 
-## git add .
-Ajout des fichiers modifiés au staged
+### Ajout des fichiers modifiés au staged
+```
+git add .
+```
 
-## git status
-Liste des fichiers modifiés prêt à être commité (en vert)
+### Liste des fichiers modifiés prêt à être commité (en vert)
+```
+git status
+```
 
-## git commit -m "MAJ des fichiers Dockerfile et pom.xml"
-Commit des fichiers sur le repository local
+### Commit des fichiers sur le repository local
+```
+git commit -m "MAJ des fichiers Dockerfile et pom.xml"
+```
 
-## git push
-Envoi des fichiers sur le serveur
+### Envoi des fichiers sur le serveur
+```
+git push
+```
