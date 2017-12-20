@@ -1,11 +1,13 @@
-node {
-
-  stage ('Checkout') {
-    checkout scm
-  }
-
-
-  stage ('Java Build') {
-    sh 'mvn clean package'
-  }
+pipeline {
+    agent any
+    tools { 
+        maven 'maven-tool' 
+    }
+    stages {
+        stage ('Build') {
+            steps {
+    			sh 'mvn clean package'
+            }
+        }
+    }
 }
